@@ -1,0 +1,47 @@
+{
+  "name": "@atjn/stylelint-config",
+  "version": "1.0.0",
+  "description": "My personal CSS code style",
+  "main": ".stylelintrc.js",
+  "files": [
+    ".stylelintrc.js"
+  ],
+  "scripts": {
+    "lint:js": "eslint '**/*.js'",
+    "lint": "npm run lint:js",
+    "test:tap": "tap",
+    "test": "npm install && npm run lint && npm run test:tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atjn/stylelint-config.git"
+  },
+  "keywords": [
+    "stylelint",
+    "config"
+  ],
+  "author": {
+    "name": "atjn",
+    "email": "dev@atjn.dk",
+    "url": "https://github.com/atjn/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atjn/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/atjn/stylelint-config#readme",
+  "dependencies": {
+    "stylelint-config-recommended": "^4.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.12.0"
+  },
+  "devDependencies": {
+    "@atjn/eslint-config": "^2.0.0",
+    "diff": "^5.0.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "stylelint": "^13.12.0",
+    "tap": "^14.11.0"
+  }
+}
