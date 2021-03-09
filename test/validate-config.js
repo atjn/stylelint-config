@@ -10,10 +10,7 @@ module.exports = async () => {
 
 		t.test("should return a report with zero linting errors", async t => {
 
-			const result = await stylelint.lint({
-				files: "test/fixture/valid.css",
-				configOverrides: {"ignoreFiles": false},
-			});
+			const result = await stylelint.lint({files: "test/fixture/valid.css"});
 			
 			t.equal(result.errored, false, "reports no errors");
 			t.equal(result.results[0].deprecations.length, 0, "did not report any deprecations");
@@ -31,10 +28,7 @@ module.exports = async () => {
 
 		t.test("should return a list of linting errors", async t => {
 
-			const result = await stylelint.lint({
-				files: "test/fixture/invalid.css",
-				configOverrides: {"ignoreFiles": false},
-			});
+			const result = await stylelint.lint({files: "test/fixture/invalid.css"});
 			
 			t.equal(result.errored, true, "reports errors");
 			t.ok(result.results[0].warnings.length > 0, "reports at least one warning");

@@ -2,10 +2,8 @@
 
 module.exports = {
 
-	"extends": "stylelint-config-recommended",
-
-	"ignoreFiles": [
-		"test/fixture/**",
+	"extends": [
+		"stylelint-config-recommended",
 	],
 
 
