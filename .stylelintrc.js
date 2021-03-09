@@ -1,5 +1,7 @@
 "use strict";
 
+const os = require("os");
+
 module.exports = {
 
 	"extends": [
@@ -110,7 +112,12 @@ module.exports = {
 		"comment-whitespace-inside":					"always",
 
 		"indentation":									"tab",
-		"linebreaks":									"unix",
+
+		//												If the operating system does not use Unix EOLs, Git should auto-convert between EOL types when pushing/pulling code.
+		//												If Git is incorrectly configured, the wrong EOLs can end up in the codebase, but will be detected next time linting is run on an OS with Unix EOLs.
+		//												This is mainly a problem on Windows and it's a mess.
+		"linebreaks":									os.EOL === "\n" ? "unix" : undefined,
+
 		"max-empty-lines":								 4,
 		"no-missing-end-of-source-newline":				 true,
 		"unicode-bom":									"never",
