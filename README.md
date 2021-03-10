@@ -4,8 +4,6 @@
 [![stylelint version](https://img.shields.io/npm/dependency-version/@atjn/stylelint-config/peer/stylelint?style=flat-square&label=stylelint)](https://www.npmjs.com/package/@atjn/stylelint-config?activeTab=dependencies)
 
 [![tests status](https://img.shields.io/github/workflow/status/atjn/stylelint-config/Code%20quality?style=flat-square&label=tests)](https://github.com/atjn/stylelint-config/actions/workflows/code-quality.yml)
-[![code quality score](https://img.shields.io/codacy/grade/25d00330c50c4de0901d61787fff6193?style=flat-square)](https://www.codacy.com/gh/atjn/stylelint-config/dashboard)
-[![code coverage](https://img.shields.io/codacy/coverage/25d00330c50c4de0901d61787fff6193?style=flat-square)](https://www.codacy.com/gh/atjn/stylelint-config/dashboard)
 [![lgtm js security score](https://img.shields.io/lgtm/grade/javascript/g/atjn/stylelint-config.svg?style=flat-square&logo=lgtm&label=security%20score)](https://lgtm.com/projects/g/atjn/stylelint-config/context:javascript)
 
 This is my personal CSS code style, defined as a _[stylelint](https://stylelint.io/)_ shared configuration. My style is:
