@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/atjn/stylelint-config#readme",
   "dependencies": {
-    "stylelint-config-recommended": "^4.0.0"
+    "stylelint-config-recommended": "^5.0.0"
   },
   "peerDependencies": {
     "stylelint": "^13.13.1"
