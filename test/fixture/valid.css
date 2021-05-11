@@ -1,5 +1,8 @@
 
-/* This sheet satisfies all linting rules. It should pass. */
+/**
+ * @file
+ * This sheet satisfies all linting rules. It should pass.
+ */
 
 a:link {
 	color: gray;

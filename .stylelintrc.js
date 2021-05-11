@@ -1,5 +1,10 @@
 "use strict";
 
+/**
+ * @file
+ * This is the main configuration file that defines all the rules stylelint will use to validate css.
+ */
+
 const os = require("os");
 
 module.exports = {
