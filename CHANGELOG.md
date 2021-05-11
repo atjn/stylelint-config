@@ -1,4 +1,4 @@
-## Unreleased
+## 1.2.0
 `added` Improved detection of broken CSS by updating to [`stylelint-config-recommended@5.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/5.0.0)
 
 ## 1.1.1
