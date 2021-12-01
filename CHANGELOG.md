@@ -1,3 +1,8 @@
+## 2.0.0
+`breaking` Updated to work with stylelint 14.
+
+`added` Added detection of broken custom variables by updating to [`stylelint-config-recommended@6.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/6.0.0)
+
 ## 1.2.0
 `added` Improved detection of broken CSS by updating to [`stylelint-config-recommended@5.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/5.0.0)
 
