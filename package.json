@@ -31,18 +31,18 @@
   },
   "homepage": "https://github.com/atjn/stylelint-config#readme",
   "dependencies": {
-    "stylelint-config-recommended": "^6.0.0"
+    "stylelint-config-recommended": "^7.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.1.0"
+    "stylelint": "^14.7.1"
   },
   "devDependencies": {
-    "@atjn/eslint-config": "^3.3.1",
-    "eslint": "^7.32.0",
-    "eslint-plugin-jsdoc": "^37.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "stylelint": "^14.1.0",
-    "tap": "^15.1.5"
+    "@atjn/eslint-config": "^5.0.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-jsdoc": "^39.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "stylelint": "^14.7.1",
+    "tap": "^16.0.1"
   },
   "engines": {
     "node": "^12.x || ^14.x || ^16.x"
