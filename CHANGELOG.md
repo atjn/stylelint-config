@@ -1,3 +1,8 @@
+## 4.0.0
+`breaking` Removed support for Node 14. New Node version are now automatically added.
+
+`added` Updated to [`stylelint-config-recommended@9.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/9.0.0)
+
 ## 3.0.0
 `breaking` Removed support for Node 12.
 
