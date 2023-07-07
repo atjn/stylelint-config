@@ -34,14 +34,14 @@
     "stylelint-config-recommended": "^9.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.10.1"
   },
   "devDependencies": {
     "@atjn/eslint-config": "^7.1.0",
     "eslint": "^8.34.0",
     "eslint-plugin-jsdoc": "^40.0.0",
     "eslint-plugin-promise": "^6.1.1",
-    "stylelint": "^14.16.1",
+    "stylelint": "^15.10.1",
     "tap": "^16.3.4"
   },
   "engines": {
