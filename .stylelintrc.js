@@ -13,119 +13,130 @@ module.exports = {
 		"stylelint-config-recommended",
 	],
 
+	"plugins": [
+		"stylelint-stylistic",
+	],
 
-	//Rules are ordered according to their documentation: https://stylelint.io/user-guide/rules/list
+
+	// Rules are ordered according to their documentation:
+	// - https://stylelint.io/user-guide/rules/list
+	// - https://github.com/elirasza/stylelint-stylistic#2-rules
 
 	"rules": {
 
-		//Possible errors
+		// Possible errors
 
 		
-		//Limit language features
+		// Limit language features
 
-		"color-function-notation":						"modern",
+		"color-function-notation":								"modern",
 
-		"value-no-vendor-prefix":						 true,
+		"value-no-vendor-prefix":								 true,
 
-		"selector-no-vendor-prefix":					 true,
-		"selector-pseudo-element-colon-notation":		"double",
+		"selector-no-vendor-prefix":							 true,
+		"selector-pseudo-element-colon-notation":				"double",
 
-		"media-feature-name-no-vendor-prefix":			 true,
+		"media-feature-name-no-vendor-prefix":				 	 true,
 
-		"at-rule-no-vendor-prefix":						 true,
+		"at-rule-no-vendor-prefix":							 	 true,
 
-		"no-unknown-animations":						 true,
+		"no-unknown-animations":							 	 true,
 
 
-		//Stylistic issues
+		// Stylistic issues
 
-		"color-hex-case":								"upper",
+		"font-family-name-quotes":								"always-unless-keyword",
 
-		"font-family-name-quotes":						"always-unless-keyword",
+		"function-name-case":									"lower",
+		"function-url-quotes":									"always",
 
-		"function-comma-newline-after":					"always-multi-line",		
-		"function-comma-newline-before":				"never-multi-line",
-		"function-comma-space-after":					"always",
-		"function-comma-space-before":					"never",
-		"function-max-empty-lines":						 0,
-		"function-name-case":							"lower",
-		"function-parentheses-newline-inside":			"always-multi-line",
-		"function-url-quotes":							"always",
-		"function-whitespace-after":					"always",
+		"value-keyword-case":									"lower",
 
-		"string-quotes":								"double",
+		"selector-attribute-quotes":							"always",
+		"selector-type-case":									"lower",
 
-		"unit-case":									"lower",
+		"comment-whitespace-inside":							"always",
 
-		"value-keyword-case":							"lower",
+		// Stylistic issues, but for some reason not cool enough to be part of standard stylelint:
+		// https://github.com/stylelint/stylelint/issues/6657#issuecomment-1433064480
 
-		"value-list-comma-newline-after":				"always-multi-line",		
-		"value-list-comma-newline-before":				"never-multi-line",
-		"value-list-comma-space-after":					"always",
-		"value-list-comma-space-before":				"never",
-		"value-list-max-empty-lines":					 0,
+		"stylistic/color-hex-case":								"upper",
 
-		"property-case":								"lower",
+		"stylistic/function-comma-newline-after":				"always-multi-line",		
+		"stylistic/function-comma-newline-before":				"never-multi-line",
+		"stylistic/function-comma-space-after":					"always",
+		"stylistic/function-comma-space-before":				"never",
+		"stylistic/function-max-empty-lines":				 	 0,
+		"stylistic/function-parentheses-newline-inside":		"always-multi-line",
+		"stylistic/function-whitespace-after":					"always",
 
-		"declaration-bang-space-after":					"never",
-		"declaration-bang-space-before":				"always",
-		"declaration-colon-newline-after":				"always-multi-line",
-		"declaration-colon-space-after":				"always-single-line",
-		"declaration-colon-space-before":				"never",
-		"declaration-block-semicolon-newline-before":	"never-multi-line",
-		"declaration-block-semicolon-space-after":		"always-single-line",
-		"declaration-block-semicolon-space-before":		"never",
-		"declaration-block-trailing-semicolon":			"always",
+		"stylistic/string-quotes":								"double",
 
-		"block-closing-brace-newline-after":			"always",
-		"block-closing-brace-newline-before":			"always-multi-line",
-		"block-opening-brace-newline-after":			"always-multi-line",
-		"block-opening-brace-space-before":				"always",
+		"stylistic/unit-case":									"lower",
+
+		"stylistic/value-list-comma-newline-after":				"always-multi-line",		
+		"stylistic/value-list-comma-newline-before":			"never-multi-line",
+		"stylistic/value-list-comma-space-after":				"always",
+		"stylistic/value-list-comma-space-before":				"never",
+		"stylistic/value-list-max-empty-lines":					 0,
+
+		"stylistic/property-case":								"lower",
+
+		"stylistic/declaration-bang-space-after":				"never",
+		"stylistic/declaration-bang-space-before":				"always",
+		"stylistic/declaration-colon-newline-after":			"always-multi-line",
+		"stylistic/declaration-colon-space-after":				"always-single-line",
+		"stylistic/declaration-colon-space-before":				"never",
+		"stylistic/declaration-block-semicolon-newline-before":	"never-multi-line",
+		"stylistic/declaration-block-semicolon-space-after":	"always-single-line",
+		"stylistic/declaration-block-semicolon-space-before":	"never",
+		"stylistic/declaration-block-trailing-semicolon":		"always",
+
+		"stylistic/block-closing-brace-newline-after":			"always",
+		"stylistic/block-closing-brace-newline-before":			"always-multi-line",
+		"stylistic/block-opening-brace-newline-after":			"always-multi-line",
+		"stylistic/block-opening-brace-space-before":			"always",
 		
-		"selector-attribute-operator-space-after":		"never",
-		"selector-attribute-operator-space-before":		"never",
-		"selector-attribute-quotes":					"always",
-		"selector-combinator-space-after":				"always",
-		"selector-combinator-space-before":				"always",
-		"selector-descendant-combinator-no-non-space":	 true,
-		"selector-pseudo-class-case":					"lower",
-		"selector-pseudo-element-case":					"lower",
-		"selector-type-case":							"lower",
+		"stylistic/selector-attribute-operator-space-after":	"never",
+		"stylistic/selector-attribute-operator-space-before":	"never",
+		"stylistic/selector-combinator-space-after":			"always",
+		"stylistic/selector-combinator-space-before":			"always",
+		"stylistic/selector-descendant-combinator-no-non-space": true,
+		"stylistic/selector-pseudo-class-case":					"lower",
+		"stylistic/selector-pseudo-element-case":				"lower",
 
-		"selector-list-comma-newline-after":			"always-multi-line",
-		"selector-list-comma-newline-before":			"never-multi-line",
-		"selector-list-comma-space-after":				"always-single-line",
-		"selector-list-comma-space-before":				"never",
+		"stylistic/selector-list-comma-newline-after":			"always-multi-line",
+		"stylistic/selector-list-comma-newline-before":			"never-multi-line",
+		"stylistic/selector-list-comma-space-after":			"always-single-line",
+		"stylistic/selector-list-comma-space-before":			"never",
 
-		"media-feature-colon-space-after":				"always",
-		"media-feature-colon-space-before":				"never",
-		"media-feature-name-case":						"lower",
-		"media-feature-range-operator-space-after":		"always",
-		"media-feature-range-operator-space-before":	"always",
+		"stylistic/media-feature-colon-space-after":			"always",
+		"stylistic/media-feature-colon-space-before":			"never",
+		"stylistic/media-feature-name-case":					"lower",
+		"stylistic/media-feature-range-operator-space-after":	"always",
+		"stylistic/media-feature-range-operator-space-before":	"always",
 
-		"media-query-list-comma-newline-after":			"always-multi-line",
-		"media-query-list-comma-newline-before":		"never-multi-line",
-		"media-query-list-comma-space-after":			"always-single-line",
-		"media-query-list-comma-space-before":			"never",
+		"stylistic/media-query-list-comma-newline-after":		"always-multi-line",
+		"stylistic/media-query-list-comma-newline-before":		"never-multi-line",
+		"stylistic/media-query-list-comma-space-after":			"always-single-line",
+		"stylistic/media-query-list-comma-space-before":		"never",
 
-		"at-rule-name-case":							"lower",
-		"at-rule-name-newline-after":					"always-multi-line",
-		"at-rule-name-space-after":						"always-single-line",
-		"at-rule-semicolon-newline-after":				"always",
-		"at-rule-semicolon-space-before":				"never",
+		"stylistic/at-rule-name-case":							"lower",
+		"stylistic/at-rule-name-newline-after":					"always-multi-line",
+		"stylistic/at-rule-name-space-after":					"always-single-line",
+		"stylistic/at-rule-semicolon-newline-after":			"always",
+		"stylistic/at-rule-semicolon-space-before":				"never",
 
-		"comment-whitespace-inside":					"always",
+		"stylistic/indentation":								"tab",
 
-		"indentation":									"tab",
+		//														If the operating system does not use Unix EOLs, Git should auto-convert between EOL types when pushing/pulling code.
+		//														If Git is incorrectly configured, the wrong EOLs can end up in the codebase, but will be detected next time linting is run on an OS with Unix EOLs.
+		//														This is mainly a problem on Windows and it's a mess.
+		"stylistic/linebreaks":									os.EOL === "\n" ? "unix" : undefined,
 
-		//												If the operating system does not use Unix EOLs, Git should auto-convert between EOL types when pushing/pulling code.
-		//												If Git is incorrectly configured, the wrong EOLs can end up in the codebase, but will be detected next time linting is run on an OS with Unix EOLs.
-		//												This is mainly a problem on Windows and it's a mess.
-		"linebreaks":									os.EOL === "\n" ? "unix" : undefined,
-
-		"max-empty-lines":								 4,
-		"no-missing-end-of-source-newline":				 true,
-		"unicode-bom":									"never",
+		"stylistic/max-empty-lines":							 4,
+		"stylistic/no-missing-end-of-source-newline":			 true,
+		"stylistic/unicode-bom":								"never",
 
 	},
 
