@@ -1,3 +1,8 @@
+## 5.0.0
+`breaking` Updated to work with Stylelint 15 and included [`stylelint-stylistic`](https://github.com/elirasza/stylelint-stylistic) to keep stylistic rules.
+
+`added` Updated to [`stylelint-config-recommended@13.0.0`](https://github.com/stylelint/stylelint-config-recommended/releases/tag/13.0.0)
+
 ## 4.0.0
 `breaking` Removed support for Node 14. New Node version are now automatically added.
 
